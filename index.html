@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procyon Lab — HCI &amp; Web Systems Research</title>
+    <style>
+        :root {
+            --bg: #fafafa;
+            --text: #1a1a2e;
+            --accent: #16213e;
+            --muted: #555;
+            --border: #ddd;
+            --link: #0f4c75;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        header {
+            background: var(--accent);
+            color: #fff;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        header h1 { font-size: 2rem; font-weight: 600; letter-spacing: 0.02em; }
+        header p { color: #b0c4de; margin-top: 0.5rem; font-size: 1.05rem; }
+        main { max-width: 780px; margin: 0 auto; padding: 2.5rem 1.5rem; }
+        section { margin-bottom: 2.5rem; }
+        h2 {
+            font-size: 1.2rem;
+            color: var(--accent);
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 0.4rem;
+            margin-bottom: 1rem;
+        }
+        p, li { color: var(--muted); font-size: 0.95rem; }
+        ul { padding-left: 1.2rem; }
+        li { margin-bottom: 0.4rem; }
+        a { color: var(--link); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .people { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+        .person { background: #fff; border: 1px solid var(--border); border-radius: 6px; padding: 1rem; }
+        .person h3 { font-size: 0.95rem; color: var(--accent); }
+        .person p { font-size: 0.85rem; margin-top: 0.3rem; }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.8rem;
+            color: #999;
+            border-top: 1px solid var(--border);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Procyon Lab</h1>
+        <p>Human-Computer Interaction &amp; Web Systems Research</p>
+    </header>
+    <main>
+        <section>
+            <h2>About</h2>
+            <p>Procyon Lab studies how people interact with web infrastructure — URLs, naming systems, link structures, and the interfaces built on top of them. Our work sits at the intersection of HCI, information architecture, and web engineering.</p>
+            <p>We focus on practical research questions: how do users interpret and trust URLs? How do link-sharing patterns affect information quality? What makes web addresses usable, robust, and maintainable at scale?</p>
+        </section>
+
+        <section>
+            <h2>Research Areas</h2>
+            <ul>
+                <li>URL usability and user mental models of web addresses</li>
+                <li>Link rot measurement and longitudinal web archiving studies</li>
+                <li>Shortlink behavior, redirect chains, and transparency</li>
+                <li>DNS and naming systems from a user-experience perspective</li>
+                <li>Trust signals in browser address bars and link previews</li>
+                <li>Cross-platform link consistency (email, chat, docs, mobile)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Recent Work</h2>
+            <ul>
+                <li><em>Measuring Link Rot Across Academic Citation Networks</em> — tracking URL decay in CS conference proceedings (2019–2025)</li>
+                <li><em>Do Users Read URLs?</em> — an eye-tracking study of address bar attention during navigation tasks</li>
+                <li><em>Shortlink Transparency</em> — user comprehension of redirect destinations before and after preview interventions</li>
+                <li><em>Subdomain Semantics</em> — how subdomain naming conventions affect perceived credibility of web services</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>People</h2>
+            <div class="people">
+                <div class="person">
+                    <h3>Dr. Mira Patel</h3>
+                    <p>Principal Investigator<br>Web naming systems, URL usability</p>
+                </div>
+                <div class="person">
+                    <h3>James Okonkwo</h3>
+                    <p>PhD Candidate<br>Link rot and web archiving</p>
+                </div>
+                <div class="person">
+                    <h3>Sofia Chen</h3>
+                    <p>PhD Candidate<br>Trust signals in browser UI</p>
+                </div>
+                <div class="person">
+                    <h3>Ravi Krishnamurthy</h3>
+                    <p>MS Student<br>Redirect chain analysis</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Teaching</h2>
+            <p>Lab members contribute to courses on web systems, HCI methods, and information architecture. Course materials and exercises are periodically shared for use by collaborating institutions.</p>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <p>Procyon Lab is part of the School of Information. For inquiries about collaboration or student opportunities, reach us at <a href="mailto:lab@procyonlab.org">lab@procyonlab.org</a>.</p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2026 Procyon Lab. All rights reserved.
+    </footer>
+</body>
+</html>
